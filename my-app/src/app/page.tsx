@@ -1,6 +1,5 @@
 import Link from 'next/link';
 
-// src/app/page.tsx
 export default function Home() {
   return (
     <main>

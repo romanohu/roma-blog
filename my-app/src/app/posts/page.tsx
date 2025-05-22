@@ -10,7 +10,7 @@ export default function PostListPage() {
 
       {posts.map((post) => (
         <div key={post.slug}>
-          <h2>
+          <h2 >
             <Link href={`/posts/${post.slug}`}>
               {post.title}
             </Link>
