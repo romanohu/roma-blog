@@ -1,5 +1,6 @@
 import { getAllPosts, getPostBySlug } from "@/lib/markdown";
 import { notFound } from "next/navigation";
+import Link from "next/link";
 
 export async function generateStaticParams() {
   const posts = getAllPosts();
@@ -34,6 +35,11 @@ export default async function Page({ params }: any) {
       <div
         dangerouslySetInnerHTML={{ __html: post.contentHtml }}
       />
+      <p>
+        <Link href={'/posts'} className="text-indigo-600 font-bold underline hover:text-indigo-800 transition-colors">
+          投稿一覧へ
+        </Link>
+      </p>
     </div>
   );
 }

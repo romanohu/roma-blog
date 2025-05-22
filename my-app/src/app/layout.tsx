@@ -1,4 +1,5 @@
 import './globals.css'
+import Link from 'next/link';
 
 export const metadata = {
   title: 'RomaLog',
@@ -19,7 +20,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="grid place-items-center  bg-gray-100">
             <div className="w-full max-w-4xl bg-white p-8 rounded shadow">
               <h1 className="text-4xl font-semibold text-center -ml-4 font-serif tracking-wide text-gray-800">
+                <Link href={"/"}>
                 RomaLog
+                </Link>
              </h1> 
             </div>
           </div>
