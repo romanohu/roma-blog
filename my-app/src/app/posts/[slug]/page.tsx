@@ -1,22 +1,22 @@
 import { getAllPosts, getPostBySlug } from "@/lib/markdown";
 import { notFound } from "next/navigation";
 
-type PageProps = {
+interface Props {
   params: {
     slug: string;
   };
-};
+}
 
-// ✅ 必ず "async" をつける（非同期対応）
-export async function generateStaticParams() {
-  const posts = getAllPosts(); // 同期関数なら await は不要
+// ✅ 動的ルートに必要：ビルド時に静的なページを生成
+export async function generateStaticParams(): Promise<{ slug: string }[]> {
+  const posts = getAllPosts(); // 同期関数
   return posts.map((post) => ({
     slug: post.slug,
   }));
 }
 
-// ✅ ページ本体（ここは async でOK）
-export default async function PostPage({ params }: PageProps) {
+// ✅ ページ本体（params を使う）
+export default async function PostPage({ params }: Props) {
   const post = await getPostBySlug(params.slug);
 
   if (!post) {
@@ -44,4 +44,5 @@ export default async function PostPage({ params }: PageProps) {
     </div>
   );
 }
+
 
