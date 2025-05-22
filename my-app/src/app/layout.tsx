@@ -1,5 +1,6 @@
 import './globals.css'
 import Link from 'next/link';
+import Background from '@/components/background';
 
 export const metadata = {
   title: 'Roma.Log!!',
@@ -33,6 +34,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
 
         <main>{children}</main>
+        
+        <Background />
 
         <footer>
           &copy; 2025 Romanohu
