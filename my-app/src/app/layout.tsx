@@ -11,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ja">
-      <body className= "mx-auto w-1/2 bg-gray-200">
+      <body className= "grid place-items-center h-screen">
         {/* 共通のヘッダー */}
         <header>
           <h1>RomaLog</h1>
