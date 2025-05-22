@@ -1,3 +1,5 @@
+import './globals.css'
+
 export const metadata = {
   title: 'Romanohu Blog',
   description: 'Romanohu Blog',
@@ -11,17 +13,22 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ja">
-      <body className= "grid place-items-center h-screen">
-        {/* 共通のヘッダー */}
-        <header className= "grid place-items-center h-screen">
-          <h1>RomaLog</h1>
+      <body className="grid place-items-center min-h-screen bg-gray-100">
+  
+        <header>
+          <div className="grid place-items-center  bg-gray-100">
+            <div className="w-full max-w-4xl bg-white p-8 rounded shadow">
+              <h1 className="text-4xl font-semibold text-center -ml-4 font-serif tracking-wide text-gray-800">
+                RomaLog
+             </h1> 
+            </div>
+          </div>
         </header>
 
-        {/* ページの中身（個別ページがここに差し込まれる） */}
-        <main className= "bg-white/10 backdrop-blur-md rounded-xl p-4 shadow-lg">{children}</main>
+        
+        <main>{children}</main>
 
-        {/* 共通のフッター */}
-        <footer className= "grid place-items-center h-screen">
+        <footer>
           &copy; 2025 RomaLog
         </footer>
       </body>

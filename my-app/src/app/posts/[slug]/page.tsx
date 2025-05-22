@@ -18,7 +18,7 @@ export default async function Page({ params }: any) {
   }
 
   return (
-    <div>
+    <div  className="prose">
       <h1>{post.title}</h1>
 
       <p>

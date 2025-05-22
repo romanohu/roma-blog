@@ -6,11 +6,11 @@ export default function PostListPage() {
 
   return (
     <div>
-      <h1>投稿一覧</h1>
+      <h1 className="w-full max-w-4xl bg-white p-8 rounded shadow">投稿一覧</h1>
 
       {posts.map((post) => (
-        <div key={post.slug}>
-          <h2>
+        <div key={post.slug} className="w-full max-w-4xl bg-white p-8 rounded shadow">
+          <h2 >
             <Link href={`/posts/${post.slug}`}>
               {post.title}
             </Link>

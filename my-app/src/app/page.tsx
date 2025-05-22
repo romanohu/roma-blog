@@ -1,18 +1,17 @@
 import Link from 'next/link';
 
-// src/app/page.tsx
 export default function Home() {
   return (
     <main>
-      <h1>適当なことを投稿するブログ</h1>
-      <p>現状，装飾なし……</p>
-      <p>
-        <Link href={`/posts`}>
+      <h1 className="w-full max-w-4xl bg-white p-8 rounded shadow">適当なことを投稿するブログ</h1>
+      <p className="w-full max-w-4xl bg-white p-8 rounded shadow">少し装飾がついた</p>
+      <p className="w-full max-w-4xl bg-white p-8 rounded shadow">
+        <Link href={`/posts`}　className="text-indigo-600 font-bold underline hover:text-indigo-800 transition-colors">
           投稿一覧へ
         </Link>
       </p>
-      <p>
-        <Link href={`/about`}>
+      <p className="w-full max-w-4xl bg-white p-8 rounded shadow">
+        <Link href={`/about`}　className="text-indigo-600 font-bold underline hover:text-indigo-800 transition-colors">
           about me
         </Link>
       </p>
