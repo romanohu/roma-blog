@@ -23,6 +23,11 @@ export default function AboutPage() {
           <li>アニメ( 「SSSS.DYNAZENON」，「閃光のハサウェイ」等)</li>
           <li>音楽( 「サカナクション」 )</li>
         </ul>
+      <p> 
+        <Link href={'/'} className="text-indigo-600 font-bold underline hover:text-indigo-800 transition-colors">
+          Homeへ
+        </Link>
+      </p>
     </div>
   );
 }
