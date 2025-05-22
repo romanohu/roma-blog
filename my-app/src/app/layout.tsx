@@ -13,15 +13,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="ja">
       <body className= "grid place-items-center h-screen">
         {/* 共通のヘッダー */}
-        <header>
+        <header className= "grid place-items-center h-screen">
           <h1>RomaLog</h1>
         </header>
 
         {/* ページの中身（個別ページがここに差し込まれる） */}
-        <main>{children}</main>
+        <main className= "grid place-items-center h-screen">{children}</main>
 
         {/* 共通のフッター */}
-        <footer>
+        <footer className= "grid place-items-center h-screen">
           &copy; 2025 RomaLog
         </footer>
       </body>
