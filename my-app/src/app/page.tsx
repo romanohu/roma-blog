@@ -2,7 +2,8 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main>
+    <div className="px-4 sm:px-8">
+      <div className="grid gap-0.5 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
       <p className="w-full max-w-4xl bg-white p-8 rounded shadow">
         <Link href={`/posts`} className="text-indigo-600 font-bold underline hover:text-indigo-800 transition-colors">
           投稿一覧へ
@@ -13,7 +14,8 @@ export default function Home() {
           about me
         </Link>
       </p>
-    </main>
+     </div>
+    </div>
   );
 }
 
