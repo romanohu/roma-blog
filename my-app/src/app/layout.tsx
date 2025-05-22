@@ -2,8 +2,8 @@ export const metadata = {
   title: 'Romanohu Blog',
   description: 'Romanohu Blog',
   icons: {
-    icon: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
+    icon: "./favicon.ico",
+    
   },
 };
 
