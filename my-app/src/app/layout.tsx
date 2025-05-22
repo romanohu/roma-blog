@@ -2,7 +2,7 @@ import './globals.css'
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Roma.Log',
+  title: 'Roma.Log!!',
   description: 'Romanohu Blog',
   icons: {
     icon: "/favicon.ico",
@@ -21,7 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div className="w-full max-w-4xl bg-white p-8 rounded shadow">
               <h1 className="text-4xl font-semibold text-center -ml-4 font-serif tracking-wide text-gray-800">
                 <Link href={"/"}>
-                Roma.Log
+                Roma.Log!!
                 </Link>
              </h1> 
               <p className="text-center text-gray-600">
@@ -35,7 +35,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main>{children}</main>
 
         <footer>
-          &copy; 2025 Roma.Log
+          &copy; 2025 Romanohu
         </footer>
       </body>
     </html>
