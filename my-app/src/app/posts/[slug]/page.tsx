@@ -19,19 +19,16 @@ export default async function Page({ params }: any) {
   }
 
   return (
+    <div className="grid place-items-center min-h-screen bg-gray-">
     <div  className="prose">
-      <h1>{post.title}</h1>
-
+      <h2>{post.title}</h2>
       <p>
         投稿日: {new Date(post.date).toLocaleDateString("ja-JP")}
-      </p>
-
-      <div>
+        <br />
         {post.tags?.map((tag: string) => (
           <span key={tag}>#{tag}</span>
         ))}
-      </div>
-
+       </p>
       <div
         dangerouslySetInnerHTML={{ __html: post.contentHtml }}
       />
@@ -41,6 +38,7 @@ export default async function Page({ params }: any) {
         </Link>
       </p>
     </div>
+  </div>
   );
 }
 
