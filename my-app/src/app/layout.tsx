@@ -1,10 +1,10 @@
 import './globals.css'
 
 export const metadata = {
-  title: 'Romanohu Blog',
+  title: 'RomaLog',
   description: 'Romanohu Blog',
   icons: {
-    icon: "./favicon.ico",
+    icon: "/favicon.ico",
     
   },
 };
