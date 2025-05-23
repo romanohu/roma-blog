@@ -36,6 +36,10 @@ export default async function Page({ params }: any) {
         <Link href={'/posts'} className="text-indigo-600 font-bold underline hover:text-indigo-800 transition-colors">
           投稿一覧へ
         </Link>
+        |
+        <Link href={'/'} className="text-indigo-600 font-bold underline hover:text-indigo-800 transition-colors">
+          Homeへ
+        </Link>
       </p>
     </div>
   </div>
