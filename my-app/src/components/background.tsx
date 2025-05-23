@@ -1,8 +1,8 @@
-import '@/app/background.css';
+import './background.css';
 
 export default function Background() {
     return(
-  <div className="area w-full h-screen absolute bg-gradient-to-l from-[#aaacd6] to-[#84858f] -z-10">
+  <div className="area fixed inset-0 w-full h-full bg-gradient-to-l from-[#aaacd6] to-[#84858f] -z-10">
     <ul className="circles relative w-full h-full overflow-hidden">
         <li className="circle circle1"></li>
         <li className="circle circle2"></li>

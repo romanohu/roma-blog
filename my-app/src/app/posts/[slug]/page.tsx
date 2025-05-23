@@ -19,7 +19,7 @@ export default async function Page({ params }: any) {
   }
 
   return (
-    <div className="grid place-items-center min-h-screen bg-gray-">
+    <div>
     <div  className="prose">
       <h2>{post.title}</h2>
       <p>
@@ -35,10 +35,6 @@ export default async function Page({ params }: any) {
       <p>
         <Link href={'/posts'} className="text-indigo-600 font-bold underline hover:text-indigo-800 transition-colors">
           投稿一覧へ
-        </Link>
-        |
-        <Link href={'/'} className="text-indigo-600 font-bold underline hover:text-indigo-800 transition-colors">
-          Homeへ
         </Link>
       </p>
     </div>
