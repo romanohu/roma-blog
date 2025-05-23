@@ -7,7 +7,7 @@ export default function Header() {
                 <div className="w-full max-w-4xl bg-white p-8 rounded shadow">
                     <h1 className="text-4xl font-semibold text-center -ml-4 font-serif tracking-wide text-gray-800">
                         <Link href={"/"}>
-                        Roma.Log!!
+                        Roma.Log(/・・)/
                         </Link>
                      </h1> 
                       <p className="text-center text-gray-600">
