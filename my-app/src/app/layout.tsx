@@ -4,7 +4,7 @@ import Background from '@/components/background';
 import Footer from '@/components/footer';
 
 export const metadata = {
-  title: 'Roma.Log!!',
+  title: 'Roma.Log(/・・)/',
   description: 'Romanohu Blog',
   icons: {
     icon: "/favicon.ico",
