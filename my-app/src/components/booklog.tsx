@@ -24,7 +24,7 @@ export default function Booklog({ books }: Props) {
             {new Date(book.pubDate) >= oneMonthAgo && new Date(book.pubDate) <= today && (
                 <div>
                  <a href={book.link} className="underline" target="_blank" rel="noopener noreferrer">{book.title}</a>
-                    <p>{book.pubDate}</p>
+                    <p>登録日：{book.pubDate}</p>
                 </div>
             )}  
           </li>
