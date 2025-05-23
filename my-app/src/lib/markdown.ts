@@ -16,9 +16,9 @@ export async function getPostBySlug(slug: string) {
 
   return {
     title: data.title || slug,
-    contentHtml,
     date: data.date || null,
     tags: data.tags || [],
+    contentHtml,
   };
 }
 

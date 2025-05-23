@@ -9,10 +9,11 @@ export async function generateStaticParams() {
   }));
 }
 
+
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-export default async function Page({ params }: any) {
+export default async function PostPage({ params }: any) {
   const { slug } = params;
-  const post = await getPostBySlug(slug);
+  const post = await getPostBySlug(slug); ;
 
   if (!post) {
     notFound();
