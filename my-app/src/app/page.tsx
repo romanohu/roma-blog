@@ -12,7 +12,7 @@ export default function Home() {
       </p>
       <p className="w-full max-w-4xl bg-white p-8 rounded shadow">
         <Link href={`/booklog`} className="text-indigo-600 font-bold underline hover:text-indigo-800 transition-colors">
-          最近気になった本
+          最近気になっている本
         </Link>
       </p>
       <p className="w-full max-w-4xl bg-white p-8 rounded shadow">
