@@ -11,7 +11,7 @@ type POSTS = {
 
 export default function Header({ posts }: { posts: POSTS[] }) {
     return(
-        <header  className="bg-[#E5F0F8]">
+        <header  className="bg-[#fff5e1]">
             <div className="gnavi__wrap">
                 <ul className="gnavi__lists">
                     <li className="gnavi__list"><Link href={'/'}className="text-indigo-600 font-bold underline hover:text-indigo-800 transition-colors"><div >Roma.Log(/・・)/</div></Link></li>

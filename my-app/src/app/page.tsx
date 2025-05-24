@@ -2,7 +2,7 @@
 
 export default function Home() {
   return (
-    <div></div>
+    <div>トップページに書くものが無くなった</div>
   )
 }
 
