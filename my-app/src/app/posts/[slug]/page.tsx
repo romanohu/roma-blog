@@ -20,7 +20,7 @@ export default async function PostPage({ params }: any) {
   }
 
   return (
-    <div>
+    <div className="flex justify-center items-center">
     <div  className="prose">
       <h2>{post.title}</h2>
       <p>
