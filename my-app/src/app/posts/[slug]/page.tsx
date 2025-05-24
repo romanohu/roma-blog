@@ -33,15 +33,6 @@ export default async function PostPage({ params }: any) {
       <div
         dangerouslySetInnerHTML={{ __html: post.contentHtml }}
       />
-      <p>
-        <Link href={'/posts'} className="text-indigo-600 font-bold underline hover:text-indigo-800 transition-colors">
-          投稿一覧へ
-        </Link>
-        |
-        <Link href={'/'} className="text-indigo-600 font-bold underline hover:text-indigo-800 transition-colors">
-          Homeへ
-        </Link>
-      </p>
     </div>
   </div>
   );
