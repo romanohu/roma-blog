@@ -1,6 +1,6 @@
 import { getAllPosts, getPostBySlug } from "@/lib/markdown";
 import { notFound } from "next/navigation";
-import Link from "next/link";
+
 
 export async function generateStaticParams() {
   const posts = getAllPosts();
