@@ -2,7 +2,7 @@
 
 import Parser from 'rss-parser';
 import Booklog from '@/components/booklog';
-import Link from 'next/link';
+
 
 type Book = {
   title: string;
@@ -36,11 +36,7 @@ export default async function BooklogPage() {
   return (
     <div>
         <Booklog books={books} />
-        <p> 
-            <Link href={'/'} className="text-indigo-600 font-bold underline hover:text-indigo-800 transition-colors">
-            Homeへ
-            </Link>
-        </p>
+        
     </div>
   )
 }

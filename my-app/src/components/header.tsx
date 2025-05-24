@@ -1,20 +1,36 @@
 import Link from "next/link"
+import "./header.css"; // Assuming you have a CSS file for styles
 
-export default function Header() {
+type POSTS = {
+        slug : string,
+        title: string,
+        date: string | null,
+        tags: string[],
+        };
+
+
+export default function Header({ posts }: { posts: POSTS[] }) {
     return(
-        <header>
-            <div className="grid place-items-center  bg-gray-100">
-                <div className="w-full max-w-4xl bg-white p-8 rounded shadow">
-                    <h1 className="text-4xl font-semibold text-center -ml-4 font-serif tracking-wide text-gray-800">
-                        <Link href={"/"}>
-                        Roma.Log(/・・)/
-                        </Link>
-                     </h1> 
-                      <p className="text-center text-gray-600">
-                        ロマノフが適当なことを書いたり載せたりする個人ページ
-                      </p>
-                </div>
+        <header  className="bg-[#E5F0F8]">
+            <div className="gnavi__wrap">
+                <ul className="gnavi__lists">
+                    <li className="gnavi__list"><Link href={'/'}className="text-indigo-600 font-bold underline hover:text-indigo-800 transition-colors"><div >Roma.Log(/・・)/</div></Link></li>
+                    <li className="gnavi__list"><Link href={`/posts`} className="text-indigo-600 font-bold underline hover:text-indigo-800 transition-colors">記事一覧</Link>
+                        <ul className="dropdown__lists">
+                            {posts.map((post) => (
+                                <li key={post.slug} className="dropdown__list">
+                                    <Link href={`/posts/${post.slug}`} className="text-indigo-600 font-bold underline hover:text-indigo-800 transition-colors">
+                                        {post.title}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </li>
+                    <li className="gnavi__list"><Link href={'/booklog'}className="text-indigo-600 font-bold underline hover:text-indigo-800 transition-colors">最近気になっている本</Link></li>
+                    <li className="gnavi__list"><Link href={`/about`} className="text-indigo-600 font-bold underline hover:text-indigo-800 transition-colors">about me</Link></li>
+                </ul>
             </div>
+            
         </header>
     );
 }
