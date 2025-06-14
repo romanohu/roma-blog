@@ -2,7 +2,7 @@ import './globals.css'
 import Header from '@/components/header';
 import Background from '@/components/background';
 import Footer from '@/components/footer';
-import { getAllPosts } from '@/lib/markdown';
+
 
 export const metadata = {
   title: 'Roma.Log(/・・)/',
@@ -15,7 +15,6 @@ export const metadata = {
 
 // children は各ページ（page.tsx）の中身
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const posts = getAllPosts();
   return (
     <html lang="ja">
       <head>
@@ -29,7 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="flex flex-col min-h-screen">
   
-        <Header posts={posts} />
+        <Header />
         <Background />
         <main className="flex-1 pt-8 px-4">
           {children}

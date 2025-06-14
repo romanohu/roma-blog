@@ -1,14 +1,7 @@
 import Link from "next/link"
 
-type POSTS = {
-        slug : string,
-        title: string,
-        date: string | null,
-        tags: string[],
-        };
 
-
-export default function Header({ posts }: { posts: POSTS[] }) {
+export default function Header(){
     return(
         <header>
             <div>
