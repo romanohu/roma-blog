@@ -23,6 +23,11 @@ export default function AboutPage() {
           <li>アニメ( 「SSSS.DYNAZENON」，「閃光のハサウェイ」等)</li>
           <li>音楽( 「サカナクション」 )</li>
         </ul>
+
+        <h4>相互リンク</h4>
+          <ul>
+            <li><Link href={"https://miya-lis.net/"}>Index of /miya-lis/</Link></li>
+          </ul>
      
     </div>
   );
