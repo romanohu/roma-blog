@@ -29,13 +29,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="flex flex-col min-h-screen">
   
         <Header />
-        <Background />
+      
         <main className="flex-1 pt-8 px-4">
           {children}
         </main>
         
-        <Footer />
-        
+      <Background />
+        <Footer /> 
       </body>
     </html>
   );
