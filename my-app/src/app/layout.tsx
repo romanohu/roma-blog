@@ -24,6 +24,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="theme-color" content="#ffffff" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="google-site-verification" content="lmZ0csHc4PPsP5Znevek_JVN1nIPYQOCHrqi8KB99Rc" />
+
+          <meta property="og:title" content="Roma.log(/・・)/" />
       </head>
       <body className="flex flex-col min-h-screen bg-orange-50">
   
