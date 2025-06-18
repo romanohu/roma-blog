@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function AboutPage() {
   return (
-    <div className="prose">
+    <div className="no-tailwind">
       <h1>About Me</h1>
       <p>
         X(Twitter)：<Link href={"https://x.com/romanohu794"}>@romanohu794</Link>
