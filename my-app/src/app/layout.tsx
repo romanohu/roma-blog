@@ -2,6 +2,7 @@ import './globals.css'
 import Header from '@/components/header';
 import Footer from '@/components/footer';
 
+import BookshelfPage from '@/components/bookshelf';
 
 export const metadata = {
   title: 'Roma.Log(/・・)/',
@@ -24,14 +25,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="google-site-verification" content="lmZ0csHc4PPsP5Znevek_JVN1nIPYQOCHrqi8KB99Rc" />
       </head>
-      <body className="flex flex-col min-h-screen">
+      <body className="flex flex-col min-h-screen bg-orange-50">
   
         <Header />
-        
         <main className="flex-1 container mx-auto px-4 py-8">
           {children}
         </main>
-        
+         <BookshelfPage />
         <Footer /> 
       </body>
     </html>

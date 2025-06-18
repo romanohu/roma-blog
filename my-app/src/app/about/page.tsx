@@ -29,11 +29,6 @@ export default function AboutPage() {
           <li>音楽( 「サカナクション」 )</li>
         </ul>
 
-        <h4>相互リンク</h4>
-          <ul>
-            <li><Link href={"https://miya-lis.net/"}>Index of /miya-lis/</Link></li>
-            <li><Link href={"https://mikazukimo.github.io/zukimo_shiroko_suki/"}>ずきもの書庫</Link></li>
-          </ul>
      
     </div>
   );
