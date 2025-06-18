@@ -20,8 +20,7 @@ export default async function PostPage({ params }: any) {
   }
 
   return (
-    <div className="flex justify-center items-center">
-    <div  className="prose">
+    <div className="no-tailwind">
       <h2>{post.title}</h2>
       <p>
         投稿日: {new Date(post.date).toLocaleDateString("ja-JP")}
@@ -34,7 +33,6 @@ export default async function PostPage({ params }: any) {
         dangerouslySetInnerHTML={{ __html: post.contentHtml }}
       />
     </div>
-  </div>
   );
 }
 

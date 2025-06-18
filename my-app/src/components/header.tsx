@@ -8,7 +8,6 @@ export default function Header() {
           <Link href="/">Roma.Log(/・・)/</Link>
         </h1>
         <nav className="flex gap-4">
-          <Link className="hover:underline" href="/">ホーム</Link>
           <Link className="hover:underline" href="/about">About</Link>
           <Link className="hover:underline" href="/posts">Posts</Link>
           <Link className="hover:underline" href="/booklog">Booklog</Link>
