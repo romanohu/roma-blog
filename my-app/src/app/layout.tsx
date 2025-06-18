@@ -1,6 +1,5 @@
 import './globals.css'
 import Header from '@/components/header';
-import Background from '@/components/background';
 import Footer from '@/components/footer';
 
 
@@ -34,7 +33,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {children}
         </main>
         
-      <Background />
         <Footer /> 
       </body>
     </html>
