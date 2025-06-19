@@ -12,9 +12,10 @@ const BookshelfPage = () => {
   const [links] = useState<Link[]>([
     { id: 1, title: 'GitHub', url: 'https://github.com/romanohu', color: 'bg-gray-700' },
     { id: 2, title: 'Twitter', url: 'https://x.com/romanohu794', color: 'bg-blue-500' },
-    { id : 3, title: 'ずきもの書庫', url: 'https://mikazukimo.github.io/zukimo_shiroko_suki/', color: 'bg-yellow-500' },
-    { id : 4, title: 'miya-lis', url: 'https://xn--cbkk.xn--u8jixh5t.xn--q9jyb4c/', color: 'bg-green-500' },
-    { id : 5, title: 'Utsugi0101', url: 'https://utsugi0101.dev/', color: 'bg-purple-500' },
+    { id : 3, title: 'Booklog', url: 'https://booklog.jp/users/romanohu794/', color: 'bg-red-500' },
+    { id : 5, title: 'ずきもの書庫', url: 'https://mikazukimo.github.io/zukimo_shiroko_suki/', color: 'bg-yellow-500' },
+    { id : 6, title: 'miya-lis', url: 'https://xn--cbkk.xn--u8jixh5t.xn--q9jyb4c/', color: 'bg-green-500' },
+    { id : 7, title: 'Utsugi0101', url: 'https://utsugi0101.dev/', color: 'bg-purple-500' },
   ]);
 
   const rows = 2; // ここで段数を設定（1〜4程度推奨）
@@ -37,8 +38,10 @@ const BookshelfPage = () => {
   return (
     <div className="p-8">
       <div className="max-w-4xl mx-auto">
+        
         {/* 本棚 */}
         <div className="bg-orange-100 p-4 rounded-lg">
+          
           {shelves.map((shelf, index) => (
             <div key={index} className="mb-4 last:mb-0">
               {/* 本（リンク） */}
@@ -49,7 +52,7 @@ const BookshelfPage = () => {
                     onClick={() => handleLinkClick(link.url)}
                     className={`
                       ${link.color} text-white px-4 py-8 rounded-t
-                      hover:scale-105 transition-transform cursor-pointer
+                      hover:scale-105 cursor-pointer
                       text-sm font-semibold shadow-md
                       w-20 h-24 flex items-end justify-center
                     `}
