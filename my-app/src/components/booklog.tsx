@@ -18,6 +18,7 @@ export default function Booklog({ books }: Props) {
   return (
     
     <div>
+      <h2 className="text-2xl font-bold mb-4">気になっている本</h2>
         <ul>
         {books.map((book, idx) => (
           <li key={idx}>

@@ -2,7 +2,7 @@ import './globals.css'
 import Header from '@/components/header';
 import Footer from '@/components/footer';
 
-import BookshelfPage from '@/components/bookshelf';
+
 
 export const metadata = {
   title: 'Roma.Log(/・・)/',
@@ -28,13 +28,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta property="og:title" content="Roma.log(/・・)/" />
          <meta property="og:image" content="https://romablog-lime.vercel.app/ogp.jpg" />
       </head>
-      <body className="flex flex-col min-h-screen bg-orange-50">
+      <body className="flex flex-col min-h-screen bg-orange-50 ">
   
         <Header />
         <main className="flex-1 container mx-auto px-4 py-8">
           {children}
         </main>
-         <BookshelfPage />
         <Footer /> 
       </body>
     </html>
