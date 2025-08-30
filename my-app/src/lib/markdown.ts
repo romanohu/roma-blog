@@ -4,7 +4,6 @@ import matter from "gray-matter";
 import { remark } from "remark";
 import html from "remark-html";
 
-// 指定された slug から Markdown を読み込んで HTML に変換する
 export async function getPostBySlug(slug: string) {
   const filePath = path.join(process.cwd(), "src/posts", `${slug}.md`);
   const fileContent = fs.readFileSync(filePath, "utf8");
@@ -43,5 +42,5 @@ export function getAllPosts() {
       };
     });
 
-  return posts.sort((a, b) => (a.date < b.date ? 1 : -1)); // 新しい順に並べ替え
+  return posts.sort((a, b) => (a.date < b.date ? 1 : -1)); 
 }

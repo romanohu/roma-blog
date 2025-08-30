@@ -26,7 +26,7 @@ export default function AboutPage() {
           <li>映画( 「TENET」，「BLADE RUNNER」，「デッドプール2」 )</li>
           <li>ゲーム( 「モンスターハンター」，「学園アイドルマスター」，「崩壊スターレイル」，「DeathStranding」等)</li>
           <li>アニメ( 「SSSS.DYNAZENON」，「閃光のハサウェイ」等)</li>
-          <li>音楽(「サカナクション」)</li>
+          <li>音楽( 「サカナクション」 )</li>
         </ul>
 
      

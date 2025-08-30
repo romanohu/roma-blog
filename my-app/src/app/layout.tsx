@@ -13,7 +13,6 @@ export const metadata = {
   },
 };
 
-// children は各ページ（page.tsx）の中身
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ja">
